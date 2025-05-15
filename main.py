@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 import os
 import requests
 
+
 GUILD_ID = discord.Object(id=1287829703121567977)
 response = requests.get("https://sheetdb.io/api/v1/uz4ah8dd3yjrv")
 data = response.json()
@@ -97,5 +98,5 @@ async def checkPrizes(ctx):
         await member.send(f"Your Prizes:\n{prizes}")
     
 
-
+keep_alive()
 bot.run(token,  log_handler=handler, log_level=logging.DEBUG)
