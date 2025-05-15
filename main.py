@@ -4,7 +4,7 @@ import logging
 from dotenv import load_dotenv
 import os
 import requests
-import keep_alive
+from keep_alive import keep_alive
 
 GUILD_ID = discord.Object(id=1287829703121567977)
 response = requests.get("https://sheetdb.io/api/v1/uz4ah8dd3yjrv")
